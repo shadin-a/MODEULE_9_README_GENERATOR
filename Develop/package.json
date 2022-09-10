@@ -9,6 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^6.3.1"
-  }
+    "inquirer": "^6.3.1",
+    "inquirer-multi-choice": "^0.0.1",
+    "prompt-sync": "^4.2.0"
+  },
+  "type": "commonjs"
 }
