@@ -10,22 +10,33 @@ const questions = [
     'How can we install it?',
     'What can we use it for?',
     'Please pick a license from the available options: ' + LICENSES.toString(),
+    'What is your GitHub username?',
+    'What is your e-mail?',
+    'What tests have you run in your app?',
+    'Who are your contributors?'
+
+
 ];
 
 const filename = 'README.md';
 
  var data = {
     title: '',
-    description: '',
-    tableOfContents:'',
+    description: 'DESCRIPTION',
+    descriptionInput: '',
+    tableOfContents:'TABLE OF CONTENTS',
     installation: 'INSTALLATION',//create steps option
     installationInput:'',
-    usage: '',
+    usage: 'USAGE',
+    usageInput: '',
     lisence: '',
-    contributing: '',
-    tests: '',
-    questions: '',
-    githubUsername: '',
+    contributing: 'CONTRIBUTING',
+    contributingInput: '',
+    tests: 'TESTS',
+    testsInput: '',
+    questions: 'FAQ',
+    contactInfo: 'Feel free to reach me via my carriar pigeon, Hank.',
+    github: '',
     emailAddress: '',
 }
 
@@ -46,33 +57,36 @@ function adder(var1, var2) {
 
 // TODO: Create a function to initialize app
 function init() {
-    /*var sum = adder(1, 2);
-    console.log('sum: ' + sum);
-
-    var sum2 = adder('hi ', 'hello');
-    console.log(sum2);
-
-    var num1 = 10
-    var num2 = 20
-    console.log(adder(num1, num2));*/
 
    console.log('hello world!');
     data.title = prompt(questions[0]);
     console.log(`My project title is ${data.title}`);
 
-    data.description = prompt(questions[1]);
-    console.log(`My project is about ${data.description}`);
+    data.descriptionInput = prompt(questions[1]);
+    console.log(`My project is about ${data.descriptionInput}`);
 
     data.installationInput = prompt(questions[2]);
     console.log(`To install my project ${data.installationInput}`);
 
-    data.usage = prompt(questions[3]);
-    console.log(`Here's an example of usage ${data.usage}`); //input screenshot here?
+    data.usageInput = prompt(questions[3]);
+    console.log(`Here's an example of usage: ${data.usageInput}`); //input screenshot here?
 
     while (!LICENSES.includes(data.license)) {
         data.license = prompt(questions[4]);
     }
-    console.log(`This is your license ${data.license}`);
+    console.log(`This is your license: ${data.license}`);
+
+    data.github = prompt(questions[5]);
+    console.log(`This is your github url: ${data.github}`);
+
+    data.emailAddress = prompt(questions[6]);
+    console.log(`This is your email: ${data.emailAddress}`);
+
+    data.testsInput = prompt(questions[7]);
+    console.log(`This is your email: ${data.testsInput}`);
+
+    data.contributingInput = prompt(questions[8]);
+    console.log(`Your tests: ${data.contributingInput}`);
 
     const markdown = generateMarkdown(data, 0, 0);
     console.log(markdown);

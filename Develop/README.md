@@ -1,12 +1,38 @@
 
-  # CODING BOOTCAMP
-  ## ![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)
-   coding stuff
-  ## INSTALLATION
-   with coding
-  ##  ciding
-  ![alt text for image](myappscreenshot.png)
+  # 
+
+  ## ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+  ## TABLE OF CONTENTS
+  * [Description](#description)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributors](#contributing)
+  * [Tests](#tests)
+  * [FAQ](#questions)
+
+
+  ## DESCRIPTION
   
-  licensed by https://www.gnu.org/licenses/gpl-3.0.en.html
+
+  ## INSTALLATION
+  
+  
+  ## CONTRIBUTING
+  
+
+  ## TESTS
+  
+
+  ## USAGE
+  ![App in Use](utils/myappscreenshot.png)
+
+  ## FAQ
+  
+  https://github.com/
+  Feel free to reach me via my carriar pigeon, Hank.
+
+  
+  licensed by https://opensource.org/licenses/MIT
   
   

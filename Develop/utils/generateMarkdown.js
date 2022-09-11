@@ -31,23 +31,57 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   var licenseLink = renderLicenseLink(license);
   return `
-  licensed by ${licenseLink}
+  Licensed by ${licenseLink}
   `
 }
 
+function getGithubURLAsMarkdown(username) {
+    let github = 'https://github.com/'
+    let githubURL = github + username;
+    return `${githubURL}`;
+
+}
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(structuredData) {
   var licenseSection = renderLicenseSection(structuredData.license);
   var licenseBadge = renderLicenseBadge(structuredData.license);
+  var githubURL = getGithubURLAsMarkdown(structuredData.github);
+
 
   return `
   # ${structuredData.title}
+
   ## ${licenseBadge}
-  ${structuredData.description}
+
+  ## ${structuredData.tableOfContents}
+  * [Description](#description)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributors](#contributing)
+  * [Tests](#tests)
+  * [FAQ](#questions)
+
+
+  ## ${structuredData.description}
+  ${structuredData.descriptionInput}
+
   ## ${structuredData.installation}
   ${structuredData.installationInput}
+  
+  ## ${structuredData.contributing}
+  ${structuredData.contributingInput}
+
+  ## ${structuredData.tests}
+  ${structuredData.testsInput}
+
   ## ${structuredData.usage}
-  ![alt text for image](myappscreenshot.png)
+  ![App in Use](utils/myappscreenshot.png)
+
+  ## ${structuredData.questions}
+  * ${structuredData.emailAddress}
+  * ${githubURL}
+  * ${structuredData.contactInfo}
+
   ${licenseSection}
   `;
   
