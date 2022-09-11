@@ -82,6 +82,7 @@ function generateMarkdown(structuredData) {
   * ${githubURL}
   * ${structuredData.contactInfo}
 
+  # ${structuredData.lisence}
   ${licenseSection}
   `;
   

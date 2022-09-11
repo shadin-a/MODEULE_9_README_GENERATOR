@@ -29,7 +29,7 @@ const filename = 'README.md';
     installationInput:'',
     usage: 'USAGE',
     usageInput: '',
-    lisence: '',
+    lisence: 'LICENSE',
     contributing: 'CONTRIBUTING',
     contributingInput: '',
     tests: 'TESTS',
