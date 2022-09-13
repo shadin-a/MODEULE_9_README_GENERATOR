@@ -59,7 +59,7 @@ function generateMarkdown(structuredData) {
   * [Usage](#usage)
   * [Contributors](#contributing)
   * [Tests](#tests)
-  * [FAQ](#questions)
+  * [FAQ](#FAQ)
 
 
   ## ${structuredData.description}
